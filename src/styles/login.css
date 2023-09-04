@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.bigbox {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-login-box {
+  position: absolute;
+  height: 24rem;
+  width: 25rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: rgb(247, 240, 251);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar .nav-headings {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  border-bottom: solid blueviolet 2px;
+}
+
+.nav-components {
+  text-decoration: none;
+  color: black;
+}
+.login-email-id {
+  margin-top: 2rem;
+}
+.email-id-heading {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+.login-email-id {
+  margin-top: 0rem;
+  margin-left: 2rem;
+  width: 21rem;
+  height: 2rem;
+  border-radius: 8px;
+  border-style: none;
+}
+.login-btn {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: blueviolet;
+  color: white;
+  border-style: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+input[type="text"]:focus {
+  border: none;
+}
