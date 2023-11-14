@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+.navbar {
+  width: 100vw;
+  height: 7.5rem;
+  background: #f3dcb3;
+}
+
+.upper-navbar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower-navbar {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #150504;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-navbar-items {
+  height: 90%;
+  width: 100%;
+  /* margin-right: 15rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-upper {
+  color: rgb(45, 14, 14);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.logo-lower {
+  /* margin-top: 0.4rem; */
+  color: rgb(45, 14, 14);
+  font-size: 0.8rem;
+}
+
+.logo-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cinzel", serif;
+}
+
+.navigation-items {
+  height: 2rem;
+  width: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20rem;
+}
+
+.lower-navbar-contents {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Mulish", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
