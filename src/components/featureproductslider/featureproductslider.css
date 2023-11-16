@@ -1,0 +1,24 @@
+#wrapper {
+  height: 35rem;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#container {
+  width: 400vw;
+}
+
+.item {
+  height: 23rem;
+  width: 6%;
+  padding: 10px;
+  float: left;
+  background-color: rgb(250, 223, 189);
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.slide-1 {
+  margin-left: 1.5rem;
+}

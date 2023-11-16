@@ -1,0 +1,25 @@
+.featured-products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.featured-products-box {
+  height: 7rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.featured-products-heading {
+  font-size: 2.5rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: bolder;
+}
+.featured-products-subheading {
+  margin-top: 1rem;
+  font-family: "Mulish", sans-serif;
+}
