@@ -6,16 +6,14 @@ import Navbar from "./components/navbar/navbar";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
-      <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/login" element={<LoginPage />}></Route>
-            <Route path="/" element={<Landing />}></Route>
-          </Routes>
-        </Router>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<LoginPage />}></Route>
+          <Route path="/" element={<Landing />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

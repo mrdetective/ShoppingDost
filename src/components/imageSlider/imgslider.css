@@ -1,6 +1,50 @@
 .section-1 {
-  height: 44rem;
-  background-color: bisque;
+  height: 35rem;
+  background-color: #108ea0;
   width: 100%;
   margin-top: -1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-img {
+  height: 100%;
+
+  width: 50%;
+}
+
+.latest-product-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.latest-product-heading {
+  font-size: 3rem;
+  font-family: "Mulish", sans-serif;
+  width: 25rem;
+}
+
+.latest-product-innertext {
+  margin-top: 1rem;
+  margin-left: -2.1rem;
+}
+.see-latest-products-btn {
+  width: 7rem;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-left: -18rem;
+  /* font-size: 1.2rem; */
+  background-color: black;
+  color: aliceblue;
+  border: solid 1px black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.see-latest-products-btn:hover {
+  background-color: aliceblue;
+  color: black;
 }
