@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700&display=swap");
+
 .section-1 {
   height: 35rem;
-  background-color: #108ea0;
+  background-color: #2a2a2a;
   width: 100%;
-  margin-top: -1rem;
+  margin-top: 7rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .slider-img {
   height: 100%;
-
   width: 50%;
 }
 
@@ -20,16 +21,16 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: whitesmoke;
 }
 .latest-product-heading {
   font-size: 3rem;
-  font-family: "Blinker", sans-serif;
   width: 25rem;
 }
 
 .latest-product-innertext {
   margin-top: 1rem;
-  margin-left: -2.1rem;
+  margin-left: -5rem;
 }
 .see-latest-products-btn {
   width: 7rem;
@@ -37,8 +38,8 @@
   margin-top: 2rem;
   margin-left: -18rem;
   /* font-size: 1.2rem; */
-  background-color: black;
-  color: aliceblue;
+  background-color: beige;
+  color: black;
   border: solid 1px black;
   cursor: pointer;
   border-radius: 5px;

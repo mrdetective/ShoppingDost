@@ -7,7 +7,7 @@ function Banner1() {
     <section className="banner-1-section">
       <div className="banner-1-box">
         <img src={banner1img} className="banner-1-img" />
-        <div className="banner-1-text">
+        <div className="banner-1-text extra-left-margin">
           <h1 className="banner-1-heading">Comfortable & Elegante Living</h1>
           <p className="banner-1-innertext">
             ShoppingDost Products are all made to standard sizes so that you can

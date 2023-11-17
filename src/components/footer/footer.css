@@ -1,0 +1,25 @@
+.footer-container {
+  background-color: black;
+  height: 10rem;
+  width: 100vw;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text {
+  color: whitesmoke;
+  display: flex;
+  margin-top: 2rem;
+  /* margin-right: rem; */
+}
+.footer-text div {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+.footer-lower-text {
+  color: whitesmoke;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}

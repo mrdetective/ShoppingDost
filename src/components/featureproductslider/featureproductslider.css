@@ -15,9 +15,10 @@
   width: 6%;
   padding: 10px;
   float: left;
-  background-color: rgb(200, 181, 159);
+  background-color: rgb(185, 182, 180);
   margin-top: 5rem;
   margin-left: 1rem;
+  border-radius: 7px;
 }
 
 .slide-1 {

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;600&display=swap");
 .banner-1-section {
-  background-color: #f8eac9;
+  background-color: #2a2a2a;
   width: 100vw;
   height: 44rem;
   display: flex;
@@ -25,11 +25,13 @@
 }
 
 .banner-1-text {
-  font-family: "Blinker", sans-serif;
   width: 24rem;
   margin-left: 3rem;
 }
 
+.extra-left-margin {
+  margin-left: 5rem;
+}
 .banner-1-heading {
   font-size: 2rem;
 }
@@ -46,7 +48,6 @@
   background-color: black;
   color: whitesmoke;
   cursor: pointer;
-  font-family: "Blinker", sans-serif;
 }
 
 .banner-1-btn:hover {
