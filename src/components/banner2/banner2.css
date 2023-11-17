@@ -1,0 +1,21 @@
+.banner-2-section {
+  background-color: #f8eac9;
+  width: 100vw;
+  height: 44rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-2-box {
+  width: 70rem;
+  background-color: rgb(183, 174, 162);
+  height: 30rem;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

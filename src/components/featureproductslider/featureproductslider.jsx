@@ -1,9 +1,9 @@
 import React from "react";
 import "./featureproductslider.css";
 
-function Featureproductslider() {
+function Featureproductslider({scrollContainerRef}) {
   return (
-    <div id="wrapper">
+    <div id="wrapper" ref={scrollContainerRef}>
       <div id="container">
         <div class="item slide-1">1</div>
         <div class="item">2</div>
