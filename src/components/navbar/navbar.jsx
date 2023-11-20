@@ -9,10 +9,12 @@ function Navbar() {
     <nav className="navbar">
       <div className="upper-navbar">
         <div className="upper-navbar-items">
-          <div className="logo-img">
-            <p className="logo-upper">ShoppingDost</p>
-            <p className="logo-lower">"your shopmate"</p>
-          </div>
+          <a href="/">
+            <div className="logo-img">
+              <p className="logo-upper">ShoppingDost</p>
+              <p className="logo-lower">"your shopmate"</p>
+            </div>
+          </a>
           <div className="navigation-items">
             <CiSearch size={"1.5rem"} className="navbar-icons" />
             <CgProfile size={"1.5rem"} className="navbar-icons" />

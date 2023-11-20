@@ -1,7 +1,7 @@
 .trending-products-box {
   height: 90%;
   width: 85%;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 .trending-products-heading {
@@ -24,4 +24,8 @@
 
 .grid-item:hover {
   background-color: rgb(193, 180, 147);
+}
+
+.trending-products-bigbox {
+  height: 155rem;
 }
