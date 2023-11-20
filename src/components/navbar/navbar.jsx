@@ -14,21 +14,23 @@ function Navbar() {
             <p className="logo-lower">"your shopmate"</p>
           </div>
           <div className="navigation-items">
-            <CiSearch size={"1.5rem"} />
-            <CgProfile size={"1.5rem"} />
-            <CiShoppingCart size={"1.8rem"} />
+            <CiSearch size={"1.5rem"} className="navbar-icons" />
+            <CgProfile size={"1.5rem"} className="navbar-icons" />
+            <CiShoppingCart size={"1.8rem"} className="navbar-icons" />
           </div>
         </div>
       </div>
       <div className="lower-navbar">
         <div className="lower-navbar-contents">
-          <span className="mobile">MOBILE</span>
-          <span className="mobile">SHIRTS</span>
-          <span className="mobile">PANTS</span>
-          <span className="mobile">FURNITURES</span>
-          <span className="m">KITCHEN</span>
+          <div className="electronics">ELECTRONICS</div>
+          <div className="beauty">BEAUTY</div>
+          <div className="home">HOME</div>
+          <div className="women">WOMEN</div>
+          <div className="men">MEN</div>
+          <div className="vehicles">VEHICLES</div>
         </div>
       </div>
+      <div className="dropdown-contents"></div>
     </nav>
   );
 }

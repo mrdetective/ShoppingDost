@@ -1,0 +1,27 @@
+.trending-products-box {
+  height: 90%;
+  width: 85%;
+  margin-top: 8rem;
+}
+
+.trending-products-heading {
+  color: rgb(29, 9, 9);
+}
+.trending-products-smallbox {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  row-gap: 1rem;
+}
+
+.grid-item {
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: rgb(241, 228, 194);
+  margin-top: 1rem;
+}
+
+.grid-item:hover {
+  background-color: rgb(193, 180, 147);
+}

@@ -30,7 +30,7 @@
 }
 
 .extra-left-margin {
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 .banner-1-heading {
   font-size: 2rem;
@@ -48,6 +48,7 @@
   background-color: black;
   color: whitesmoke;
   cursor: pointer;
+  transition: ease-in-out 0.25s;
 }
 
 .banner-1-btn:hover {
