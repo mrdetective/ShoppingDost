@@ -15,7 +15,7 @@ function Imgslider() {
         <button
           className="see-latest-products-btn"
           onClick={() => {
-            navigate("/products/trending");
+            navigate("/trending-products");
           }}>
           See them
         </button>

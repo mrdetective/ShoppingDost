@@ -13,9 +13,9 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />}></Route>
           <Route path="/" element={<Landing />}></Route>
-          <Route path="/products">
-            <Route path="trending" element={<Trendingproducts />}></Route>
-          </Route>
+          <Route
+            path="/trending-products"
+            element={<Trendingproducts />}></Route>
         </Routes>
       </Router>
     </div>

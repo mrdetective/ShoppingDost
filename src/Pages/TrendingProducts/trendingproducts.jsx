@@ -19,7 +19,7 @@ function Trendingproducts() {
       });
   }, []);
   return (
-    <div className="bigbox trending-products-bigbox">
+    <div className="bigbox1 trending-products-bigbox">
       <div className="trending-products-box">
         <h1 className="trending-products-heading">Trending Products</h1>
         <div className="trending-products-smallbox">

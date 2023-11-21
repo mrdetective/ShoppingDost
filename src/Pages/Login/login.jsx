@@ -16,7 +16,7 @@ function LoginPage() {
     }
   };
   return (
-    <div className="login-bigbox">
+    <div className="bigbox1">
       <div className="main-login-box">
         <div className="login-navbar">
           <div
