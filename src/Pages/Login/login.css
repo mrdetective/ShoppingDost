@@ -13,7 +13,7 @@
 }
 
 .main-login-box {
-  position: absolute;
+  /* position: absolute; */
   height: 30rem;
   width: 25rem;
   border-radius: 10px;
@@ -91,4 +91,10 @@
 input {
   padding-top: 0.3rem;
   padding-left: 0.5rem;
+}
+
+.cart-animation {
+  height: 35rem;
+  overflow-y: hidden;
+  margin-left: -10rem;
 }

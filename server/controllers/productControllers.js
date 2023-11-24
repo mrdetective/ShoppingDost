@@ -1,5 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const products = require("../models/Products");
+const categories = require("../utils/categories");
 
 const GetProductsWithLessStock = asyncHandler(async (req, res) => {
   const productswithlessstock = await products.find({stock: {$lt: 70}});
@@ -11,4 +12,17 @@ const GetTrendingProducts = asyncHandler(async (req, res) => {
   res.status(200).json(trendingproducts);
 });
 
-module.exports = {GetProductsWithLessStock, GetTrendingProducts};
+const GetCategorywiseProducts = asyncHandler(async (req, res) => {
+  let allproducts = [];
+  for (const category of categories[req.params.categoryname]) {
+    const productswithcategory = await products.find({category: category});
+    allproducts.push(...productswithcategory);
+  }
+  res.status(200).json(allproducts);
+});
+
+module.exports = {
+  GetProductsWithLessStock,
+  GetTrendingProducts,
+  GetCategorywiseProducts,
+};

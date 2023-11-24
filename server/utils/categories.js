@@ -13,4 +13,4 @@ const categories = {
   home: ["home-decoration", "furniture", "lighting"],
   vehicles: ["automotive", "motorcycle"],
 };
-module.exports = {categories};
+module.exports = categories;

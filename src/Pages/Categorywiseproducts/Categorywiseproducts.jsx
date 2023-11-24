@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from "react";
-import "./trendingproducts.css";
+import "./Categorywiseproducts.css";
+import {useParams} from "react-router-dom";
 import Navbar from "../../components/navbar/navbar";
 
-function Trendingproducts() {
-  const [trendingproducts, settrendingproducts] = useState([]);
+function Categorywiseproducts() {
+  const {categoryname} = useParams();
+  const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch(process.env.REACT_APP_TRENDING_URL)
+    fetch(process.env.REACT_APP_CATEGORY_LINK + "/" + categoryname)
       .then((response) => {
         if (!response.ok) {
           console.log("Error occurred");
@@ -13,7 +15,8 @@ function Trendingproducts() {
         return response.json();
       })
       .then((data) => {
-        settrendingproducts(data);
+        console.log(data);
+        setProducts(data);
       })
       .catch((err) => {
         console.log(err);
@@ -24,16 +27,9 @@ function Trendingproducts() {
       <Navbar />
       <div className="bigbox2">
         <div className="product-box">
-          <h1
-            className="product-heading"
-            style={{
-              background: "#da3820",
-              color: "whitesmoke",
-            }}>
-            Trending Products
-          </h1>
+          <h1 className="product-heading">{categoryname.toUpperCase()}</h1>
           <div className="product-smallbox">
-            {trendingproducts.map((item, index) => {
+            {products.map((item, index) => {
               return (
                 <div className="item grid-item" key={item._id}>
                   <img
@@ -63,4 +59,4 @@ function Trendingproducts() {
   );
 }
 
-export default Trendingproducts;
+export default Categorywiseproducts;

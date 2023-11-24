@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 .navbar {
   width: 100vw;
   height: 7.5rem;
@@ -50,19 +51,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Ephesis", cursive;
+}
+.logo-upper {
+  font-size: 3rem;
 }
 
+.logo-lower {
+  font-size: 1rem;
+  margin-top: -1rem;
+}
 .navigation-items {
-  height: 2rem;
-  width: 8rem;
+  height: 4rem;
+  width: 12rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-left: 20rem;
 }
 
 .lower-navbar-contents {
-  width: 40rem;
+  width: 23rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -83,7 +93,26 @@
 .navbar-icons {
   transition: ease-in-out 0.25s;
   cursor: pointer;
+  margin-top: 0.2rem;
+  margin-left: 1rem;
 }
 .navbar-icons:hover {
   color: rgb(104, 104, 104);
+}
+
+.login-nav-btn:hover {
+  background-color: #2a2a2a;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.login-nav-btn {
+  margin-top: 0.3rem;
+  border: solid black;
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
 }
