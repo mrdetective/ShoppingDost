@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from "react";
-import "./Categorywiseproducts.css";
 import {useParams} from "react-router-dom";
 import Navbar from "../../components/navbar/navbar";
 
-function Categorywiseproducts() {
+export function Categorywiseproducts() {
   const {categoryname} = useParams();
   const [products, setProducts] = useState([]);
-
+  const [thumbnail, setThumbnail] = useState("");
   useEffect(() => {
     fetch(process.env.REACT_APP_CATEGORY_LINK + "/" + categoryname)
       .then((response) => {
@@ -17,6 +16,7 @@ function Categorywiseproducts() {
       })
       .then((data) => {
         console.log(data);
+        setThumbnail();
         setProducts(data);
       })
       .catch((err) => {
@@ -59,5 +59,3 @@ function Categorywiseproducts() {
     </div>
   );
 }
-
-export default Categorywiseproducts;
