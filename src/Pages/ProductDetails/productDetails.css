@@ -1,0 +1,118 @@
+.product-details-box {
+  height: 30rem;
+  width: 55rem;
+  margin-top: 11rem;
+  display: flex;
+  background-color: rgb(232, 227, 207);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.product-details-img {
+  width: 25rem;
+  height: 80%;
+  border: 1rem;
+}
+
+.product-details-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid purple; */
+  width: 30rem;
+  height: 90%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.description-text {
+  margin-top: 1rem;
+}
+.product-details-description {
+  margin-top: 0.5rem;
+}
+.quantity-box {
+  width: 7rem;
+  height: 4rem;
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plus-icon,
+.negative-icon {
+  font-size: 1.5rem;
+  border: 2px solid #2a2a2a;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: ease-in-out 0.25s;
+}
+
+.plus-icon:hover,
+.negative-icon:hover {
+  background-color: #2a2a2a;
+  color: whitesmoke;
+}
+
+.quantity {
+  font-size: 1.5rem;
+}
+
+.product-ratings {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  color: rgb(35, 2, 2);
+  font-weight: bolder;
+}
+
+.product-cost {
+  margin-top: 1rem;
+  background-color: rgb(53, 14, 14);
+  color: whitesmoke;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-stock-left {
+  margin-top: 0.7rem;
+  color: rgb(7, 48, 34);
+}
+
+.product-action-btn {
+  height: 3rem;
+  margin-top: 4rem;
+}
+
+.product-action-btn button {
+  height: 100%;
+  cursor: pointer;
+  transition: ease-in-out 0.25s;
+}
+
+.add-to-cart-btn {
+  margin-right: 1rem;
+  background-color: transparent;
+  width: 7rem;
+}
+.buy-btn {
+  background-color: #2a2a2a;
+  color: whitesmoke;
+  border: solid #2a2a2a;
+  width: 5rem;
+  border: solid 2px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2a2a2a;
+  color: whitesmoke;
+}
+
+.buy-btn:hover {
+  background-color: transparent;
+  color: #2a2a2a;
+}

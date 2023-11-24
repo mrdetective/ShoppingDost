@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from "react";
 import "./trendingproducts.css";
 import Navbar from "../../components/navbar/navbar";
+import {useNavigate} from "react-router-dom";
 
 function Trendingproducts() {
   const [trendingproducts, settrendingproducts] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     fetch(process.env.REACT_APP_TRENDING_URL)
       .then((response) => {
@@ -35,7 +37,12 @@ function Trendingproducts() {
           <div className="product-smallbox">
             {trendingproducts.map((item, index) => {
               return (
-                <div className="item grid-item" key={item._id}>
+                <div
+                  className="item grid-item"
+                  key={item._id}
+                  onClick={() => {
+                    navigate(`/products/${item._id}`);
+                  }}>
                   <img
                     className="product-img"
                     src={item.thumbnail}

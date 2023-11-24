@@ -5,6 +5,7 @@ import Landing from "./Pages/Landing/landing";
 import Navbar from "./components/navbar/navbar";
 import Trendingproducts from "./Pages/TrendingProducts/trendingproducts";
 import Categorywiseproducts from "./Pages/Categorywiseproducts/Categorywiseproducts";
+import ProductDetails from "./Pages/ProductDetails/productDetails";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
                 path=":categoryname"
                 element={<Categorywiseproducts />}></Route>
             </Route>
-            <Route path="prod"></Route>
+            <Route path=":id" element={<ProductDetails />}></Route>
           </Route>
         </Routes>
       </Router>

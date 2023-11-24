@@ -21,8 +21,21 @@ const GetCategorywiseProducts = asyncHandler(async (req, res) => {
   res.status(200).json(allproducts);
 });
 
+const GetProductwithid = asyncHandler(async (req, res) => {
+  const id = req.params.id;
+  const product = await products.find({_id: id});
+  if (product) {
+    res.status(200).json(product);
+  } else {
+    res.status(404).json({
+      message: "Not found",
+    });
+  }
+});
+
 module.exports = {
   GetProductsWithLessStock,
   GetTrendingProducts,
   GetCategorywiseProducts,
+  GetProductwithid,
 };
