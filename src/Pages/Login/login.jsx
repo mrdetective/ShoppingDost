@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./login.css";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import Lottie from "lottie-react";
 import cartanimation from "../../assets/shopping.json";
 
@@ -8,6 +8,7 @@ function LoginPage() {
   const [activeTab, setActiveTab] = useState(0);
   const [showLogin, setShowLogin] = useState(true);
   const [showCreateAccount, setShowCreateAccount] = useState(false);
+  const navigate = useNavigate();
   const toggleActive = (index) => {
     setActiveTab(index);
     if (index === 0) {
@@ -20,7 +21,18 @@ function LoginPage() {
   };
   return (
     <div>
-      <div className="bigbox1">
+      <h1
+        className="logo-img"
+        style={{justifyContent: "start", cursor: "pointer", fontSize: "3rem"}}
+        onClick={() => {
+          navigate("/");
+        }}>
+        Lavishly
+        <p className="logo-lower" style={{fontWeight: "lighter"}}>
+          "your shopmate"
+        </p>
+      </h1>
+      <div className="bigbox2">
         <Lottie
           className="cart-animation"
           animationData={cartanimation}></Lottie>

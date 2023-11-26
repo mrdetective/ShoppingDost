@@ -10,6 +10,8 @@ app.use(express.json());
 app.use(cors());
 connectDb();
 app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/otp", require("./routes/otpRoutes"));
 app.use(errorHandler);
 
 app.listen(port);

@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 import "./featureproductslider.css";
+import {useNavigate} from "react-router-dom";
 
 function Featureproductslider({scrollContainerRef}) {
   const [lessavailableproducts, setlessavailableproducts] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     fetch(process.env.REACT_APP_LESS_PRODUCT_URL)
       .then((response) => {
@@ -13,7 +14,6 @@ function Featureproductslider({scrollContainerRef}) {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setlessavailableproducts(data);
       })
       .catch((err) => {
@@ -26,7 +26,12 @@ function Featureproductslider({scrollContainerRef}) {
       <div id="container">
         {lessavailableproducts.map((item, index) => {
           return index === 0 ? (
-            <div className="item slide-1" key={item.id}>
+            <div
+              className="item slide-1"
+              key={item._id}
+              onClick={() => {
+                navigate(`/products/${item._id}`);
+              }}>
               <img
                 className="product-img"
                 src={item.thumbnail}
@@ -42,7 +47,12 @@ function Featureproductslider({scrollContainerRef}) {
               </div>
             </div>
           ) : (
-            <div className="item" key={item.id}>
+            <div
+              className="item"
+              key={item._id}
+              onClick={() => {
+                navigate(`/products/${item._id}`);
+              }}>
               <img
                 className="product-img"
                 src={item.thumbnail}

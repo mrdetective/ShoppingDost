@@ -1,11 +1,36 @@
 import React from "react";
 import "./navbar.css";
-import UpperNavbar from "../upperNavbar/upperNavbar";
+import {CiSearch} from "react-icons/ci";
+import {CiShoppingCart} from "react-icons/ci";
+import {Link} from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <UpperNavbar />
+      <div className="upper-navbar">
+        <div className="upper-navbar-items">
+          <Link to="/">
+            <div className="logo-img">
+              <p className="logo-upper">Lavishly</p>
+              <p className="logo-lower">"your shopmate"</p>
+            </div>
+          </Link>
+          <div className="navigation-items">
+            <CiSearch
+              size={"1.5rem"}
+              className="navbar-icons"
+              style={{marginTop: "0.3rem"}}
+            />
+            <div className="cart">
+              <div className="no-of-items-in-cart">0</div>
+              <CiShoppingCart size={"1.8rem"} className="navbar-icons" />
+            </div>
+            <Link to="/login" style={{color: "black"}}>
+              <div className="login-nav-btn">Login</div>
+            </Link>
+          </div>
+        </div>
+      </div>
       <div className="lower-navbar">
         <div className="lower-navbar-contents">
           <a

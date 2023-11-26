@@ -63,7 +63,7 @@
 }
 .navigation-items {
   height: 4rem;
-  width: 12rem;
+  width: 14rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -115,4 +115,22 @@
   justify-content: center;
   align-items: center;
   margin-left: 1rem;
+  transition: ease-in-out 0.25s;
+}
+
+.cart {
+  margin-top: 0.4rem;
+}
+
+.no-of-items-in-cart {
+  position: absolute;
+  margin-left: 2.5rem;
+  background-color: red;
+  color: whitesmoke;
+  height: 1.17rem;
+  width: 1.17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
 }

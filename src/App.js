@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/navbar";
 import Trendingproducts from "./Pages/TrendingProducts/trendingproducts";
 import Categorywiseproducts from "./Pages/Categorywiseproducts/Categorywiseproducts";
 import ProductDetails from "./Pages/ProductDetails/productDetails";
+import Verifyotp from "./Pages/VerifyOtp/verifyotp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             </Route>
             <Route path=":id" element={<ProductDetails />}></Route>
           </Route>
+          <Route path="/verify-otp" element={<Verifyotp />}></Route>
         </Routes>
       </Router>
     </div>

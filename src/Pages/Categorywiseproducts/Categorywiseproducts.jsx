@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
 import "./Categorywiseproducts.css";
-import {useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import Navbar from "../../components/navbar/navbar";
 
 function Categorywiseproducts() {
   const {categoryname} = useParams();
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(process.env.REACT_APP_CATEGORY_LINK + "/" + categoryname)
@@ -16,7 +17,6 @@ function Categorywiseproducts() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setProducts(data);
       })
       .catch((err) => {
@@ -32,7 +32,12 @@ function Categorywiseproducts() {
           <div className="product-smallbox">
             {products.map((item, index) => {
               return (
-                <div className="item grid-item" key={item._id}>
+                <div
+                  className="item grid-item"
+                  key={item._id}
+                  onClick={() => {
+                    navigate(`/products/${item._id}`);
+                  }}>
                   <img
                     className="product-img"
                     src={item.thumbnail}

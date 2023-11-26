@@ -1,0 +1,60 @@
+.verify-otp-box {
+  height: 30rem;
+  width: 55rem;
+  margin-top: -5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: rgb(246, 222, 184);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.shopping-cart-ride-img {
+  height: 25rem;
+  overflow-y: hidden;
+}
+
+.verify-otp-input {
+  /* margin-top: 1rem;   */
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding-left: 1rem;
+  padding-bottom: 0.2rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.verify-otp-heading {
+  color: rgb(53, 8, 8);
+}
+.send-otp-note {
+  width: 12rem;
+  margin-top: 1rem;
+  color: rgb(53, 53, 53);
+}
+.verify-input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.verify-otp-btn {
+  width: 4rem;
+  height: 2rem;
+  background-color: transparent;
+  transition: ease-in-out 0.25s;
+  border: solid #2a2a2a 2px;
+  cursor: pointer;
+}
+
+.verify-otp-btn:hover {
+  background-color: #2a2a2a;
+  color: whitesmoke;
+}
+.verify-otp-text {
+  margin-right: 6rem;
+}

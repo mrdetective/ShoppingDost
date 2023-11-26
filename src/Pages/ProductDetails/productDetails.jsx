@@ -19,8 +19,8 @@ function ProductDetails() {
         return response.json();
       })
       .then((data) => {
-        console.log(data[0].thumbnail);
-        selectedImage(data[0].thumbnail);
+        setThumbnail(data[0].thumbnail);
+        setSelectedImage(data[0].thumbnail);
         setProduct(data);
       })
       .catch((err) => {
@@ -41,7 +41,6 @@ function ProductDetails() {
     setThumbnail(img);
   };
   if (loading) {
-    console.log(loading);
     return null;
   }
   return (
