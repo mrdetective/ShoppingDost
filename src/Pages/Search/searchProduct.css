@@ -1,0 +1,33 @@
+.search-bar {
+  height: 20rem;
+  margin-top: 7.5rem;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background-color: rgb(41, 40, 40);
+}
+.product-search-input {
+  height: 1.5rem;
+  width: 25rem;
+  border-radius: 0.3rem;
+  background-color: whitesmoke;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 2rem;
+}
+.search-product-btn {
+  margin-left: 2rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: transparent;
+  color: whitesmoke;
+  border: solid 1.5px whitesmoke;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.search-product-btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}

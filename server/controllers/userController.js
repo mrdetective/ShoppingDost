@@ -6,7 +6,7 @@ const OTP = require("../models/otpModel");
 
 const registerUser = asyncHandler(async (req, res) => {
   const {name, email, password, otp} = req.body;
-  if (!email || !name || !password || !password || !otp) {
+  if (!email || !name || !password || !otp) {
     res.status(400);
     throw new Error("All fields are mandatory!");
   }
@@ -15,8 +15,13 @@ const registerUser = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error("User already registered!");
   }
+  const response = await OTP.find({email}).sort({createdAt: -1}).limit(1);
+  if (response.length === 0 || otp !== response[0].otp) {
+    res.status(400);
+    throw new Error("The otp is not valid");
+  }
   const hashedPassword = await bcrypt.hash(password, 10);
-  const user = await User.create({email, email, password: hashedPassword});
+  const user = await User.create({email, name, password: hashedPassword});
   if (user) {
     res.status(201).json({id: user.id, email: user.email});
   } else {
